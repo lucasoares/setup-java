@@ -23,7 +23,7 @@ interface PackageManager {
 const supportedPackageManager: PackageManager[] = [
   {
     id: 'maven',
-    path: [join(os.homedir(), '.m2', 'repository')],
+    path: [join(os.homedir(), '.m2', 'repository'), join('.m2', 'repository')],
     // https://github.com/actions/cache/blob/0638051e9af2c23d10bb70fa9beffcad6cff9ce3/examples.md#java---maven
     pattern: ['**/pom.xml']
   },
